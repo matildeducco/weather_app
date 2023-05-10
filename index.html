@@ -18,12 +18,12 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>Bologna</h1>
+          <h1 id="city"></h1>
           <div class="row">
             <div class="col-4">
               <ul class="basic-info">
                 <li>Tuesday 16:00</li>
-                <li id="weather-stat">Partly cloudy</li>
+                <li id="description">Partly cloudy</li>
               </ul>
             </div>
             <div class="col-4" id="img-and-temp">
@@ -31,7 +31,7 @@
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Partly cloudy"
               />
-              <span class="temp">21</span
+              <span class="temp" id="temp">21</span
               ><span class="units"
                 ><span class="celsius"><a href="#" id="celsius">°C</a></span> |
                 <span class="fahrenheit"
@@ -41,9 +41,8 @@
             </div>
             <div class="col-4">
               <ul class="other-info">
-                <li>Precipitation: <span>%</span></li>
-                <li>Humidity: <span>%</span></li>
-                <li>Wind: <span>km/h</span></li>
+                <li id="humidity">Humidity: <span>%</span></li>
+                <li id="wind">Wind: <span>km/h</span></li>
               </ul>
             </div>
           </div>
