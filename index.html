@@ -20,19 +20,29 @@
         <div class="weather-app">
           <form id="search-form">
             <div class="row">
-            <div class="col-9">
-              <input type="search" class="form-control" placeholder="Enter a city" autocomplete="off">
-            </div>
-            <div class="col-3">
-              <input type="submit" class="btn btn-primary wd-100" value="Search" id="city-input">
+              <div class="col-9">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Enter a city"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  class="btn btn-primary wd-100"
+                  value="Search"
+                  id="city-input"
+                />
+              </div>
             </div>
           </form>
-          </div>
           <h1 id="city"></h1>
           <div class="row">
             <div class="col-4">
               <ul class="basic-info">
-                <li>Tuesday 16:00</li>
+                <li id="day-time">Tuesday 16:00</li>
                 <li id="description">Partly cloudy</li>
               </ul>
             </div>
