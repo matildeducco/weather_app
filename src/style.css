@@ -8,12 +8,12 @@
 .weather-app {
     background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     padding: 20px 20px 20px;
-    border: 2px solid #3e0074;
+    border: 2px solid #642d93;
     border-radius: 8px;
 }
 
 h1 {
-    color: #3e0074;
+    color: #642d93;
     font-size: 28px;
     font-weight: 650;
     line-height: 1.5;
@@ -26,7 +26,7 @@ li {
 }
 
 li span {
-    color: #3e0074;
+    color: #642d93;
 }
 
 .basic-info {
@@ -44,7 +44,7 @@ img {
 
 .temp {
     font-size: 46px;
-    color: #3e0074;
+    color: #642d93;
     font-weight: 600;
     position: relative;
     top: -8px;
@@ -63,15 +63,15 @@ img {
 }
 
 #celsius:focus {
-    color: #3e0074;
+    color: #642d93;
     text-decoration: underline;
 }
 
 #fahrenheit:focus {
-    color: #3e0074;
+    color: #642d93;
     text-decoration: underline;
 }
 
 #description {
-    color: #3e0074;
+    color: #642d93;
 }
