@@ -6,9 +6,9 @@
 }
 
 .weather-app {
-    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
     padding: 20px 20px 20px;
-    border: 2px solid #642d93;
+    border: 2px solid rgba(100, 45, 147, 0.6);
     border-radius: 8px;
 }
 
@@ -17,6 +17,7 @@ h1 {
     font-size: 28px;
     font-weight: 650;
     line-height: 1.5;
+    margin-top: 15px;
     margin-left: 7px;
     margin-bottom: 15px;
 }
@@ -25,8 +26,31 @@ li {
     list-style: none;
 }
 
+li:first-letter {
+    text-transform: capitalize;
+}
+
 li span {
     color: #642d93;
+    font-weight: 600;
+}
+
+#search-form {
+    margin-left: 37px;
+}
+
+#submit-button {
+    background-color: #642d93;
+    color: #fff;
+    border: #642d93 solid 1px;
+    border-radius: 8px 8px 8px;
+    box-shadow: 5px 5px 5px rgba(39, 33, 65, 0.5);
+    padding: 6px 15px;
+    transition: all 200ms ease-in-out;
+}
+
+#submit-button:hover {
+    opacity: 0.9;
 }
 
 .basic-info {
@@ -34,12 +58,13 @@ li span {
 }
 
 .other-info {
-    font-size: 13px;
+    font-size: 13.5px;
 }
 
-img {
+#icon {
     position: relative;
     top: -20px;
+    width: 76px;
 }
 
 .temp {
@@ -60,18 +85,38 @@ img {
 #fahrenheit {
     color: #000;
     text-decoration: none;
+    cursor: default;
 }
 
 #celsius:focus {
     color: #642d93;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #fahrenheit:focus {
     color: #642d93;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #description {
     color: #642d93;
 }
+
+.forecast {
+    text-align: center;
+}
+
+.forecast-day, .forecast-max {
+    font-weight: 600;
+    color: #642d93;
+}
+
+#forecast-icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forecast-max, .forecast-min {
+    font-size: 13px;
+}
+
