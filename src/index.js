@@ -31,7 +31,7 @@ function showForecast(response) {
                 <img
                   src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                   alt=""
-                  width="60"
+                  width="58"
                   id="forescast-icon"
                 />
                 <span class="forecast-max">${Math.round(forecastDay.temp.max)}°</span> |
@@ -64,10 +64,19 @@ function showTemperature(response) {
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
-
     celsiusTemperature = response.data.main.temp;
+    
+    document.getElementById("fahrenheit").onclick = function() {
+    document.getElementById("wind").innerHTML = Math.round(response.data.wind.speed / 1.609344);
+    document.getElementById("wind-units").innerHTML = "mph";
+}
 
-    getForecast(response.data.coord);
+    document.getElementById("celsius").onclick = function() {
+    document.getElementById("wind").innerHTML = Math.round(response.data.wind.speed);
+    document.getElementById("wind-units").innerHTML = "km/h";
+}
+
+    getForecast(response.data.coord);    
 }
 
 function search(city) {
@@ -99,15 +108,15 @@ celsiusLink.classList.add("active");
 fahrenheitLink.classList.remove("active");
 }
 
+
+
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-
 let celsiusTemperature = null;
-
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

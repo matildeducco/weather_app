@@ -64,7 +64,7 @@ li span {
 #icon {
     position: relative;
     top: -20px;
-    width: 76px;
+    width: 74px;
 }
 
 .temp {
@@ -91,11 +91,13 @@ li span {
 #celsius:focus {
     color: #642d93;
     text-decoration: none;
+    font-weight: 600;
 }
 
 #fahrenheit:focus {
     color: #642d93;
     text-decoration: none;
+    font-weight: 600;
 }
 
 #description {
